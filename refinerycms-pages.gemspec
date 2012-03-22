@@ -1,13 +1,13 @@
 # Encoding: UTF-8
 $:.push File.expand_path('../../core/lib', __FILE__)
-require 'refinery/version'
+#require 'refinery/version'
 
-version = Refinery::Version.to_s
+#version = Refinery::Version.to_s
 
 Gem::Specification.new do |s|
   s.platform          = Gem::Platform::RUBY
   s.name              = %q{refinerycms-pages}
-  s.version           = version
+  s.version           = %q{2.0.2}
   s.summary           = %q{Pages extension for Refinery CMS}
   s.description       = %q{The default content extension of Refinery CMS. This extension handles the administration and display of user-editable pages.}
   s.date              = %q{2011-10-12}
@@ -26,3 +26,4 @@ Gem::Specification.new do |s|
   s.add_dependency 'refinerycms-core',            version
   s.add_dependency 'babosa',                      '!= 0.3.6'
 end
+
